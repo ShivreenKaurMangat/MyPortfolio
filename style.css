@@ -1,0 +1,206 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: gray;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.header {
+  text-align: right;
+  padding: 15px;
+  margin: auto;
+  border-bottom: 2px solid white;
+  margin-bottom: 20px;
+}
+
+a {
+  color:white;
+}
+
+.link {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+h2, h4 {
+  color: white;
+  padding-right: 30px;
+  font-family: cursive;
+  font-weight: 100;
+}
+
+.logo {
+  float: left;
+  width: 100px;
+  height: 30px;
+  margin-top: 10px;
+}
+
+.hero-image {
+  margin-bottom: 10px;
+}
+
+.hero {
+  height: 400px;
+}
+
+.text {
+  color: white;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.image-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.image-container {
+  width: 300px;
+  height: 170px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.name {
+  text-align: center;
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+  .logo {
+    width: 100px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 15px;
+  }
+
+  .name { 
+    font-size: 15px;
+  }
+
+  .logo {
+    float: left;
+    width: 80px;
+    height: 15px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 800px) {
+  .logo {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+
+  .logo {
+    float: left;
+    width: 90px;
+    height: 20px;
+    margin-top: 22px;
+  }
+}
+
+@media screen and (min-width: 801px)  {
+  .header {
+    text-align: right;
+    padding: 15px;
+    margin: auto;
+    border-bottom: 2px solid white;
+    margin-bottom: 20px;
+  }
+
+  a {
+    color: white;
+  }
+
+  .link {
+    text-align: center;
+  }
+
+  h2, h4 {
+    color: white;
+    padding-right: 30px;
+    font-family: cursive;
+    font-weight: 100;
+  }
+
+  .logo {
+    float: left;
+    width: 100px;
+    height: 30px;
+    margin-top: 30px;
+  }
+  
+  .hero-image {
+    margin-bottom: 10px;
+  }
+
+  .hero {
+    height: 400px;
+  }
+  
+  .text {
+    color: white;
+  }
+  
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .image-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .image-container {
+    width: 300px;
+    height: 170px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  } 
+
+  .name {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 25px;
+  }
+}
+
