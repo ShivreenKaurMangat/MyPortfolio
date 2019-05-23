@@ -1,9 +1,9 @@
-let staticCache = 'my-cache-1';
+const currentCache = 'myCache';
 
 self.addEventListener('install', function(event) {
   event.waitUntil(
-    caches.open(staticCache).then(function(cache) {
-      return cache.addAll(
+    caches.open(currentCache).then(function(newCache) {
+      return newCache.addAll(
         [
           './Fotolia_164011906_Subscription_Monthly_M-1080x675.jpg',
           './images.jpg',
@@ -17,7 +17,7 @@ self.addEventListener('install', function(event) {
         ]
       )
     })
-  ) 
+  )
 })
 
 self.addEventListener('activate', function(event) {
@@ -25,7 +25,7 @@ self.addEventListener('activate', function(event) {
     caches.keys().then(function(cachedNames) {
       return Promise.all(
         cachedNames.filter(function(cachedName) {
-          return cachedName.startsWith("my-cache") && cachedName != staticCache;
+          return cachedName.startsWith("myCache") && cachedName != currentCache;
         }).map(function(cachedName) {
           return caches.delete(cachedName);
         })
